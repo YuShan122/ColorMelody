@@ -56,15 +56,15 @@ void LED::shine(Color color_){
         break;
         
         case BLACK:
-        digitalWrite(LED_PIN_R, LOW);
-        digitalWrite(LED_PIN_G, LOW);
-        digitalWrite(LED_PIN_B, LOW);
-        break;
-        
-        case WHITE:
         digitalWrite(LED_PIN_R, HIGH);
         digitalWrite(LED_PIN_G, HIGH);
         digitalWrite(LED_PIN_B, HIGH);
+        break;
+        
+        case WHITE:
+        digitalWrite(LED_PIN_R, LOW);
+        digitalWrite(LED_PIN_G, LOW);
+        digitalWrite(LED_PIN_B, LOW);
         break;
         
         default:
@@ -75,6 +75,7 @@ void LED::shine(Color color_){
         break;
         
     }
+    // print_info();
 }
 
 void LED::print_info(){

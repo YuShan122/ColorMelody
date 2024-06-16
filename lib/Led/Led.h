@@ -4,9 +4,9 @@
 #include <Arduino.h>
 #include <State.h>
 
-#define LED_PIN_R 4
-#define LED_PIN_G 5
-#define LED_PIN_B 6
+#define LED_PIN_R A3
+#define LED_PIN_G A5
+#define LED_PIN_B A4
 
 class LED{
     public:

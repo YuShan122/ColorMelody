@@ -32,7 +32,7 @@ void setup() {
   Buzzer.bee(BLUE);
   delay(500);
   Led.shine(BLACK);
-  Buzzer.bee(BLACK);
+  Buzzer.bee(WHITE);
   delay(500);
 
 }
@@ -42,7 +42,7 @@ void loop() {
   state = ColorDetect.read_color();
   Led.shine(state);
   Buzzer.bee(state);
-  delay(1000);
+  delay(200);
   
 }
 
